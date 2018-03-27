@@ -1,24 +1,93 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="arquivos/bootstrap.css">
-    <link rel="stylesheet" href="arquivos/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <title>Sun Lighting</title>
+</head>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="arquivos/jquery.min.js" ></script>
-    <script src="arquivos/popper.min.js" ></script>
-    <script src="arquivos/bootstrap.min.js"></script>
-  </body>
+<body font-family="Open Sans">
+
+  <!-- Navbar das redes sociais-->
+  <nav id="barra_cinza_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand mr-2" href="#"> <img id="facebook" src="assets/facebook.png" width="30" height="30" class="d-inline-block align-top" alt="Facebook"/></a>
+    <a class="navbar-brand mr-2" href="#"> <img id="instagram" src="assets/instagram.png" width="30" height="30" class="d-inline-block align-top" alt="Instagram"/></a>
+    <a class="navbar-brand mr-2" href="#"> <img id="twitter" src="assets/twitter.png" width="30" height="30" class="d-inline-block align-top" alt="Twitter"/></a>
+    <a class="navbar-brand mr-2" href="#"> <img id="google_plus" src="assets/google_plus.png" width="30" height="30" class="d-inline-block align-top" alt="Google+"/></a>
+    <a class="navbar-brand mr-2" href="#"> <img id="linkedin" src="assets/linkedin.png" width="30" height="30" class="d-inline-block align-top" alt="Linkedin"/></a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><img class="mx-2" id="fale_conosco_img" src="assets/fale_conosco.png" alt="Icone de um microfone"/>FALE CONOSCO</a>
+        </li>
+        <li>
+          <img class="d-none d-xl-block" src="assets/retangulo_vertical.png" alt="retangulo vertical" id="retangulo_vertical1" />
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><img class="mx-2" src="assets/login.png" alt="Icone de um microfone"/>LOGIN</a>
+        </li>
+        <li>
+          <img class="d-none d-xl-block" src="assets/retangulo_vertical.png" alt="retangulo vertical" id="retangulo_vertical1" />
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="#"><img class="mx-2" src="assets/minha_conta.png" alt="Icone de um microfone"/>MINHA CONTA</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="">
+    <br>
+    <ul class="nav col ">
+      <li class="nav-item">
+        <img class="mt-3 ml-2" src="assets/sun_lighting_logotipo.png" alt="">
+      </li>
+      <li class="nav-item">
+        <img class="mt-3 ml-2" src="assets/sun_lighting_logomarca.png" alt="">
+      </li>
+
+
+      <li class="mt-3 ml-auto ">
+        <form class="form-inline mt-3 col-12">
+
+          <input class="form-control mr-sm-2 rounded-0" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-warning dropdown-toggle rounded-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="mx-1">Todas as Categorias</span></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+          <button class="btn btn-warning my-2 my-sm-0 ml-3 rounded-0" type="submit"> <img class="mb-1" src="assets/lupa.png" alt="lupa"> </button>
+          <img class="mx-4" src="assets/retangulo_vertical_preto.png" alt="retangulo vertical preto"/>
+          <img src="assets/carrinho_de_compras.png" alt="carrinho de compras"/>
+          <p class="mt-3 mr-3 font-weight-bold"> 0 carrinho vazio</p>
+
+        </form>
+
+      </li>
+    </ul>
+
+  </div>
+  <!-- Fim do Nav bar das redes -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="jquery.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+</body>
+
 </html>
