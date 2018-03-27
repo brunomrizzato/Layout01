@@ -15,7 +15,7 @@ gulp.task('sass', function(){
 gulp.task('js', function(){
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js'
                         ,'node_modules/jquery/dist/jquery.min.js'
-                        ,'node_modules/popper.js/dist/popper.min.js'])
+                        ,'node_modules/tether/dist/tether.min.js'])
         .pipe(gulp.dest("arquivos"))
         .pipe(browserSync.stream());
 })
@@ -24,7 +24,7 @@ gulp.task('js', function(){
 //Servidor para olhar o HTML/SCSS
 gulp.task('server', ['sass'], function(){
     browserSync.init({
-        server: "./arquivos"
+        server: "./src"
     });
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'arquivos/*.scss'], ['sass']);
     gulp.watch("arquivos/*.html").on('change', browserSync.reload);
